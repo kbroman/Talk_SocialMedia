@@ -1,0 +1,894 @@
+\documentclass[12pt,t,aspectratio=169]{beamer}
+\usepackage{graphicx}
+\setbeameroption{hide notes}
+\setbeamertemplate{note page}[plain]
+\usepackage{listings}
+
+\input{header.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% end of header
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% title info
+\title{Social media for data scientists}
+\subtitle{}
+\author{\href{https://kbroman.org}{Karl Broman}}
+\institute{Biostatistics \& Medical Informatics, UW{\textendash}Madison}
+\date{\href{https://kbroman.org}{\tt \scriptsize \color{foreground} kbroman.org}
+\\[-4pt]
+\href{https://github.com/kbroman}{\tt \scriptsize \color{foreground} github.com/kbroman}
+\\[-4pt]
+\href{https://twitter.com/kwbroman}{\tt \scriptsize \color{foreground} @kwbroman}
+\\[2pt]
+\scriptsize {\lolit Slides:} \href{https://kbroman.org/Talk\_SocialMedia}{\tt \scriptsize
+  \color{foreground} kbroman.org/Talk\_SocialMedia}
+}
+
+
+\begin{document}
+
+% title slide
+{
+\setbeamertemplate{footline}{} % no page number here
+\frame{
+  \titlepage
+
+  \vfill \hfill \includegraphics[height=6mm]{Figs/cc-zero.png} \vspace*{-3mm}
+
+  \note{These are slides for a short, informal talk that I will give
+    to UW-Madison biomedial data science students on 30 Oct 2019.
+
+    Source: {\tt https://github.com/kbroman/Talk\_SocialMedia} \\
+    Slides: {\tt https://kbroman.org/Talk\_SocialMedia}
+}
+} }
+
+
+
+
+
+{
+\setbeamercolor{background canvas}{bg=foreground}
+
+\begin{frame}[c]{}
+
+\centerline{
+\color{background}
+  \Large Everyone should have a website
+}
+
+
+\end{frame}
+}
+
+
+\begin{frame}[c]{}
+
+  \bbi
+\item How can I get ahold of that person I met?
+\item I'd like to see more of that cool thing I saw.
+\item Check out this cool talk I saw.
+\item What is X up to these days?
+\item We should invite X to give a talk.
+\item We should invite X to apply for this job.
+  \ei
+
+\end{frame}
+
+
+\begin{frame}[c]{}
+  \href{https://kbroman.org}{\figh{Websites/website_karl_broman.png}{0.9}}
+
+\vfill \hfill {\tt \small \lolit kbroman.org}
+\end{frame}
+
+\begin{frame}[c]{}
+\addtocounter{framenumber}{-1}
+  \href{https://rafalab.github.io}{\figh{Websites/website_rafalab.png}{0.9}}
+
+\vfill \hfill {\tt \small \lolit rafalab.github.io}
+\end{frame}
+
+
+\begin{frame}[c]{}
+\addtocounter{framenumber}{-1}
+  \href{https://www.alexpghayes.com}{\figh{Websites/website_alex_hayes.png}{0.9}}
+
+\vfill \hfill {\tt \small \lolit alexpghayes.com}
+\end{frame}
+
+
+\begin{frame}[c]{}
+\addtocounter{framenumber}{-1}
+  \href{https://karawoo.com}{\figh{Websites/website_kara_woo.png}{0.9}}
+
+\vfill \hfill {\tt \small \lolit karawoo.com}
+\end{frame}
+
+\begin{frame}[c]{}
+\addtocounter{framenumber}{-1}
+  \href{https://angela-li.github.io}{\figh{Websites/website_angela_li.png}{0.9}}
+
+\vfill \hfill {\tt \small \lolit angela-li.github.io}
+\end{frame}
+
+
+\begin{frame}[c]{}
+\addtocounter{framenumber}{-1}
+  \href{https://coraallencoleman.github.io}{\figh{Websites/website_cora_allen_coleman.png}{0.9}}
+
+\vfill \hfill {\tt \small \lolit coraallencoleman.github.io}
+\end{frame}
+
+
+\begin{frame}[c]{}
+\addtocounter{framenumber}{-1}
+  \href{https://www.biostat.wisc.edu/~craven}{\figh{Websites/website_craven.png}{0.8}}
+
+\vfill \hfill {\tt \small \lolit www.biostat.wisc.edu/{\textasciitilde}craven}
+\end{frame}
+
+
+\begin{frame}[c]{What to include}
+
+  \bbi
+\item Who you are
+\item How to contact you
+\item Links to your other sites (e.g., GitHub and Twitter)
+\item What you have been up to
+\item Resume/CV
+  \ei
+
+\bigskip \bigskip
+
+\onslide<2>{\centerline{\color{background} Don't include: ``under construction''}}
+\onslide<2>{\centerline{\vhilit Don't include: ``under construction''}}
+
+\end{frame}
+
+
+
+\begin{frame}[c]{How to make a website}
+
+  \bbi
+\item html-based page at biostat.wisc.edu
+\item \href{https://sites.google.com}{Google sites}
+\item \href{https://pages.github.com}{Github pages} (uses \href{https://jekyllrb.com}{jekyll})
+\item \href{https://bookdown.org/yihui/blogdown}{Blogdown} (uses \href{https://gohugo.io}{hugo})
+\item Create your own domain, e.g. at \href{https://domains.google.com}{Google domains}
+  \ei
+
+  \bigskip \bigskip
+
+  \onslide<1>{\centerline{\color{background} Does it look okay on a phone?}}
+  \onslide<2>{\centerline{\vhilit Does it look okay on a phone?}}
+
+\end{frame}
+
+
+
+
+{
+\setbeamercolor{background canvas}{bg=foreground}
+
+\begin{frame}[c]{}
+
+\centerline{
+\color{background}
+  \Large Blogs make the world better
+}
+
+
+\end{frame}
+}
+
+
+\begin{frame}[c]{Why blog?}
+
+  \bbi
+\item Practice writing
+\item Share small, useful things you've figured out
+\item Present side projects that could be really interesting to others
+\item Connect with people
+  \ei
+
+\end{frame}
+
+
+\begin{frame}[c]{}
+
+  \figh{Blogs/blog_kbroman.png}{0.9}
+
+\vfill \hfill \href{https://kbroman.org/blog}{\tt \small \lolit kbroman.org/blog}
+
+\end{frame}
+
+
+
+\begin{frame}[c]{}
+
+  \figh{Blogs/blog_beamer.png}{0.9}
+
+  \onslide<2>{
+
+    \vspace{-0.75\textheight}
+
+    \figw{Blogs/blog_beamer_better.png}{0.6}
+
+  }
+
+\end{frame}
+
+
+
+\begin{frame}[c]{}
+
+  \figh{Blogs/blog_crayon_colors.png}{0.9}
+
+\end{frame}
+
+\begin{frame}[c]{}
+
+  \figh{Blogs/blog_consulting.png}{0.9}
+
+\end{frame}
+
+\begin{frame}[c]{}
+
+  \figh{Blogs/blog_mongodb_d3js.png}{0.9}
+
+\end{frame}
+
+\begin{frame}[c]{}
+
+  \figh{Blogs/blog_apply_v_for.png}{0.9}
+
+\end{frame}
+
+
+
+
+\begin{frame}[c]{}
+
+  \figh{Blogs/blog_gelman.png}{0.9}
+
+\vfill \hfill \href{https://statmodeling.stat.columbia.edu}{\tt \small \lolit statmodeling.stat.columbia.edu}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}[c]{}
+
+  \figh{Blogs/blog_simply_stats.png}{0.9}
+
+\vfill \hfill \href{https://simplystatistics.org}{\tt \small \lolit simplystatistics.org}
+
+\end{frame}
+
+
+
+
+\begin{frame}[c]{}
+
+  \figh{Blogs/blog_statschat.png}{0.9}
+
+\vfill \hfill \href{https://statschat.org.nz}{\tt \small \lolit statschat.org.nz}
+
+\end{frame}
+
+
+
+
+\begin{frame}[c]{}
+
+  \figh{Blogs/blog_notstatschat.png}{0.9}
+
+\vfill \hfill \href{https://notstatschat.rbind.io}{\tt \small \lolit notstatschat.rbind.io}
+
+\end{frame}
+
+
+
+
+\begin{frame}[c]{}
+
+  \figh{Blogs/blog_julia_evans.png}{0.9}
+
+\vfill \hfill \href{https://jvns.ca}{\tt \small \lolit jvns.ca}
+
+\end{frame}
+
+
+
+
+\begin{frame}[c]{}
+
+  \figh{Blogs/blog_statgirl.png}{0.9}
+
+\vfill \hfill \href{https://statgirlblog.wordpress.com}{\tt \small \lolit statgirlblog.wordpress.com}
+
+\end{frame}
+
+
+
+
+\begin{frame}[c]{}
+
+  \figh{Blogs/blog_yihui.png}{0.9}
+
+\vfill \hfill \href{https://yihui.name/en}{\tt \small \lolit yihui.name/en}
+
+\end{frame}
+
+
+\begin{frame}[c]{Concerns}
+
+  \bbi
+\item Putting yourself out there
+\item The web is forever
+\item People can be cruel or even evil, {\hilit especially to women}
+\item Feeling guilty for not posting
+  \ei
+
+\end{frame}
+
+
+
+
+
+{
+\setbeamercolor{background canvas}{bg=foreground}
+
+\begin{frame}[c]{}
+
+\centerline{
+\color{background}
+  \Large Twitter is not entirely bad
+}
+
+
+\end{frame}
+}
+
+
+\begin{frame}[c]{Why twitter?}
+
+  \bbi
+\item Publicize your stuff (blogs, papers, projects)
+\item Learn about new things
+\item Get help (e.g. with programming)
+\item Find a crew of people who share your interests
+\item Complain about stuff
+  \ei
+
+\end{frame}
+
+
+\begin{frame}[c]{}
+
+  \href{http://www2.stat.duke.edu/~cr173/Sta323_Sp16/hw/hw4.html}{\figh{Tweets/tweet_socks.png}{0.9}}
+
+\end{frame}
+
+
+\begin{frame}[c]{}
+
+  \qquad
+
+  \href{https://twitter.com/drob/status/820318051522539522}{\figh{Tweets/tweet_yolo2.png}{0.5}}
+
+  \qquad
+
+  \onslide<2>{\href{https://twitter.com/kdpsinghlab/status/1179975144418226177}{\figh{Tweets/tweet_yolo1.png}{0.4}}}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}
+
+  \begin{columns}[c]
+
+    \begin{column}{0.2\textwidth}
+\figh{People/ameliamn.png}{0.3}
+
+\figh{People/_colinfay.png}{0.3}
+
+\figh{People/dataandme.png}{0.3}
+    \end{column}
+
+    \begin{column}{0.2\textwidth}
+\figh{People/hadleywickham.png}{0.3}
+
+\figh{People/hspter.png}{0.3}
+
+\figh{People/_inundata.png}{0.3}
+    \end{column}
+
+    \begin{column}{0.2\textwidth}
+\figh{People/jennybryan.png}{0.3}
+
+\figh{People/kara_woo.png}{0.3}
+
+\figh{People/lucystats.png}{0.3}
+    \end{column}
+
+    \begin{column}{0.2\textwidth}
+\figh{People/minebocek.png}{0.3}
+
+\figh{People/sckottie.png}{0.3}
+
+\figh{People/sherlockpholmes.png}{0.3}
+    \end{column}
+
+
+    \begin{column}{0.2\textwidth}
+\figh{People/stephaniehicks.png}{0.3}
+
+\figh{People/thomasp85.png}{0.3}
+
+\figh{People/tslumley.png}{0.3}
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}[c]{}
+
+  \begin{columns}[c]
+
+
+    \begin{column}{0.33\textwidth}
+\figw{People/albertocairo.png}{0.8}
+    \end{column}
+
+    \begin{column}{0.33\textwidth}
+\figw{People/arnicas.png}{0.8}
+    \end{column}
+
+    \begin{column}{0.33\textwidth}
+\figw{People/nadiehbremer.png}{0.8}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+
+
+\begin{frame}[c]{}
+
+  \begin{columns}[c]
+
+    \begin{column}{0.25\textwidth}
+\figw{People/angebassa.png}{0.8}
+\figw{People/beeonaposy.png}{0.8}
+    \end{column}
+
+    \begin{column}{0.25\textwidth}
+\figw{People/cfiesler.png}{0.8}
+\figw{People/gvwilson.png}{0.8}
+    \end{column}
+
+    \begin{column}{0.25\textwidth}
+\figw{People/hmason.png}{0.8}
+\figw{People/meganrisdal.png}{0.8}
+    \end{column}
+
+    \begin{column}{0.25\textwidth}
+\figw{People/yoyehudi.png}{0.8}
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+
+\begin{frame}[c]{}
+
+  \begin{columns}[c]
+
+    \begin{column}{0.33\textwidth}
+\figw{People/copyrightlibn.png}{0.6}
+
+\figw{People/donmoyn.png}{0.6}
+    \end{column}
+
+    \begin{column}{0.33\textwidth}
+\figw{People/kristinbriney.png}{0.6}
+
+
+\figw{People/hankreichman.png}{0.6}
+    \end{column}
+
+    \begin{column}{0.33\textwidth}
+\figw{People/thegnarrator.png}{0.6}
+
+\figw{People/nickfleisher.png}{0.6}
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+\begin{frame}[c]{}
+
+  \begin{columns}[c]
+
+    \begin{column}{0.25\textwidth}
+\figw{People/evacide.png}{0.8}
+
+\figw{People/hannah_recht.png}{0.8}
+    \end{column}
+
+    \begin{column}{0.25\textwidth}
+\figw{People/meandertail.png}{0.8}
+
+\figw{People/microwavesci.png}{0.8}
+    \end{column}
+
+    \begin{column}{0.25\textwidth}
+\figw{People/minisciencegirl.png}{0.8}
+
+\figw{People/ranimolla.png}{0.8}
+    \end{column}
+
+    \begin{column}{0.25\textwidth}
+\figw{People/sexchrlab.png}{0.8}
+
+\figw{People/voovarb.png}{0.8}
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+
+
+\begin{frame}[c]{cats}
+
+  \begin{columns}[c]
+    \begin{column}{0.33\textwidth}
+      \href{https://twitter.com/hspter/status/1184500426806190080}{\figw{Tweets/tweet_cat01.png}{0.7}}
+
+      \bigskip
+
+      \href{https://twitter.com/kwbroman/status/902919527348019201}{\figw{Tweets/tweet_cat05.png}{0.7}}
+
+    \end{column}
+    \begin{column}{0.33\textwidth}
+      \href{https://twitter.com/TheGnarrator/status/1184310647347204096}{\figw{Tweets/tweet_cat02.png}{0.7}}
+
+      \smallskip
+
+      \href{https://twitter.com/MeganRisdal/status/1184908630669156352}{\figw{Tweets/tweet_cat06.png}{0.7}}
+
+      \end{column}
+
+    \begin{column}{0.33\textwidth}
+      \href{https://twitter.com/kara_woo/status/1176688632435900417}{\figw{Tweets/tweet_cat04.png}{0.7}}
+
+      \bigskip
+
+      \href{https://twitter.com/yoyehudi/status/1183131943786942469}{\figw{Tweets/tweet_cat03.png}{0.7}}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+
+\begin{frame}[c]{cheese}
+
+  \begin{columns}[c]
+    \begin{column}{0.33\textwidth}
+      \href{https://twitter.com/MollyBeck/status/1182504876179374080}{\figw{Tweets/tweet_cheese01.png}{0.9}}
+
+      \bigskip
+
+      \href{https://twitter.com/kwbroman/status/1136380727505956864}{\figw{Tweets/tweet_cheese03.png}{0.9}}
+
+    \end{column}
+
+    \begin{column}{0.33\textwidth}
+      \href{https://twitter.com/valeriehahn/status/1174107762550300673}{\figw{Tweets/tweet_cheese02.png}{0.9}}
+
+    \end{column}
+
+    \begin{column}{0.33\textwidth}
+      \href{https://twitter.com/kwbroman/status/1085694323017072647}{\figw{Tweets/tweet_cheese04.png}{0.9}}
+
+      \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+
+\begin{frame}[c]{software}
+
+  \begin{columns}[c]
+    \begin{column}{0.25\textwidth}
+      \href{https://twitter.com/katiejolly6/status/1186685042992414720}{\figw{Tweets/tweet_software1.png}{0.9}}
+
+    \end{column}
+
+    \begin{column}{0.25\textwidth}
+      \href{https://twitter.com/dataandme/status/1187337297332715520}{\figw{Tweets/tweet_software2.png}{0.9}}
+
+    \end{column}
+
+    \begin{column}{0.25\textwidth}
+      \href{https://twitter.com/lisacrost/status/1186976243876536320}{\figw{Tweets/tweet_software3.png}{0.9}}
+
+    \end{column}
+
+    \begin{column}{0.25\textwidth}
+      \href{https://twitter.com/hadleywickham/status/1181578082295144450}{\figw{Tweets/tweet_software4.png}{0.9}}
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+
+
+\begin{frame}[c]{random stuff}
+
+  \begin{columns}[c]
+    \begin{column}{0.25\textwidth}
+      \href{https://twitter.com/oiioiioioiiioio/status/1186931015756996608}{\figw{Tweets/tweet_random1.png}{0.9}}
+
+    \end{column}
+
+    \begin{column}{0.25\textwidth}
+      \href{https://twitter.com/ryanlrussell/status/1186345219496636418}{\figw{Tweets/tweet_random2.png}{0.9}}
+
+    \end{column}
+
+    \begin{column}{0.25\textwidth}
+      \href{https://twitter.com/thomasp85/status/1184202551664754688}{\figw{Tweets/tweet_random3.png}{0.9}}
+
+    \end{column}
+
+    \begin{column}{0.25\textwidth}
+      \href{https://twitter.com/CamronBryantPhD/status/1183432400577220610}{\figw{Tweets/tweet_random4.png}{0.9}}
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+
+
+
+\begin{frame}[c]{more random stuff}
+
+  \begin{columns}[c]
+    \begin{column}{0.25\textwidth}
+      \href{https://twitter.com/IsaacFitzgerald/status/1182708160265474048}{\figw{Tweets/tweet_fun1.png}{0.9}}
+
+    \end{column}
+
+    \begin{column}{0.25\textwidth}
+      \href{https://twitter.com/TheOwenMyers/status/1182619748309356547}{\figw{Tweets/tweet_fun3.png}{0.9}}
+
+    \end{column}
+
+    \begin{column}{0.25\textwidth}
+      \href{https://twitter.com/adernburg/status/1182173682975703040}{\figw{Tweets/tweet_fun4.png}{0.9}}
+
+    \end{column}
+
+    \begin{column}{0.25\textwidth}
+      \href{https://twitter.com/ryantimpe/status/1180903244861755393}{\figw{Tweets/tweet_fun5.png}{0.9}}
+
+      \bigskip
+
+      \href{https://twitter.com/SJKSalisbury/status/1182735684966203393}{\figw{Tweets/tweet_fun2.png}{0.9}}
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+
+
+\begin{frame}[c]{data vis}
+
+  \begin{columns}[c]
+    \begin{column}{0.20\textwidth}
+      \href{https://twitter.com/NadiehBremer/status/1186651804471312386}{\figw{Tweets/tweet_datavis1.png}{0.9}}
+
+      \bigskip
+
+      \href{https://twitter.com/NadiehBremer/status/1186557195938402304}{\figw{Tweets/tweet_datavis2.png}{0.9}}
+    \end{column}
+
+    \begin{column}{0.3\textwidth}
+      \href{https://twitter.com/NadiehBremer/status/1186228131838849026}{\figw{Tweets/tweet_datavis3.png}{0.9}}
+
+    \end{column}
+
+    \begin{column}{0.20\textwidth}
+      \href{https://twitter.com/NadiehBremer/status/1185892167916519424}{\figw{Tweets/tweet_datavis4.png}{0.9}}
+
+      \bigskip
+
+      \href{https://twitter.com/NadiehBremer/status/1185854419012853760}{\figw{Tweets/tweet_datavis5.png}{0.9}}
+    \end{column}
+
+    \begin{column}{0.3\textwidth}
+      \href{https://twitter.com/NadiehBremer/status/1184383792951234560}{\figw{Tweets/tweet_datavis6.png}{0.9}}
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+
+\begin{frame}[c]{more cats}
+
+  \begin{columns}[c]
+    \begin{column}{0.25\textwidth}
+      \href{https://twitter.com/Eljaboom/status/1186687181571743744}{\figw{Tweets/tweet_morecats1.png}{0.9}}
+
+      \bigskip
+
+      \href{https://twitter.com/sadgirlpopcomic/status/1186785842351759361}{\figw{Tweets/tweet_morecats2.png}{0.9}}
+    \end{column}
+
+    \begin{column}{0.2\textwidth}
+      \href{https://twitter.com/DickKingSmith/status/1187054175106097152}{\figw{Tweets/tweet_morecats3.png}{0.9}}
+
+      \bigskip
+
+      \href{https://twitter.com/Spo11Rulz/status/1187179306654601216}{\figw{Tweets/tweet_morecats4.png}{0.9}}
+    \end{column}
+
+    \begin{column}{0.2\textwidth}
+      \href{https://twitter.com/SJLeeman/status/1187390904379891712}{\figw{Tweets/tweet_morecats5.png}{0.9}}
+
+      \bigskip
+
+      \href{https://twitter.com/Ltheory/status/1186443592027521024}{\figw{Tweets/tweet_morecats6.png}{0.9}}
+    \end{column}
+
+    \begin{column}{0.35\textwidth}
+      \href{https://twitter.com/TheGnarrator/status/1179220178544025602}{\figw{Tweets/tweet_morecats7.png}{0.9}}
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}[c]{papers}
+
+
+  \begin{columns}[c]
+    \begin{column}{0.5\textwidth}
+      \href{https://twitter.com/kwbroman/status/433417315862867969}{\figh{Tweets/tweet_sample_mixups.png}{0.8}}
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+          \onslide<2->{\href{https://twitter.com/tuuliel/status/433592988648742912}{\figw{Tweets/tweet_tuuli.png}{1.0}}}
+
+          \onslide<3->{
+            \bigskip
+
+            \href{https://twitter.com/kwbroman/status/433605577504083968}{\figw{Tweets/tweet_response2tuuli.png}{1.0}}
+          }
+    \end{column}
+
+  \end{columns}
+
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}{}
+
+\vspace{8mm}
+
+\centerline{
+    \href{http://www.deathbulge.com/comics/155}{\figw{Figs/deathbulge_155.jpg}{0.9}}
+}
+
+\vspace{7mm}
+\hfill \href{http://www.deathbulge.com/comics/155}{\lolit \footnotesize \tt deathbulge.com/comics/155}
+
+\end{frame}
+
+
+\begin{frame}[c]{Twitter challenges}
+
+  \bbi
+\item Controlling your time
+\item Keeping up
+\item People can be cruel or even evil, {\hilit especially to women}
+\item Feeling like a loser
+    \ei
+
+\end{frame}
+
+
+\begin{frame}[c]{Other sites}
+
+\bbi
+\item \href{https://github.com}{GitHub}
+\item \href{https://scholar.google.com}{Google scholar}
+\item \href{https://orcid.org}{ORCID}
+\item \href{https://youtube.com}{YouTube}
+\item \href{https://facebook.com}{\lolit Facebook}
+\item \href{https://linkedin.com}{\lolit LinkedIn}
+\ei
+
+\end{frame}
+
+
+
+
+\begin{frame}[c]{Summary}
+
+  \bbi
+\item Create a personal website, preferably with a semi-permanent URL
+\item Consider writing an occasional blog post
+\item Consider participating on twitter
+\item List your website on the other sites; list the other sites on
+  your website
+\item You don't need to include a picture, but consider at least
+  making an ``avatar''
+  \ei
+
+\end{frame}
+
+
+
+\begin{frame}[c]{}
+
+
+\Large
+
+Slides: \href{https://kbroman.org/Talk_SocialMedia}{\tt kbroman.org/Talk\_SocialMedia} \quad
+\includegraphics[height=5mm]{Figs/cc-zero.png}
+
+
+\vspace{7mm}
+
+\href{https://kbroman.org}{\tt \lolit kbroman.org}
+
+\vspace{7mm}
+
+\href{https://github.com/kbroman}{\tt \lolit github.com/kbroman}
+
+\vspace{7mm}
+
+\href{https://twitter.com/kwbroman}{\tt \lolit @kwbroman}
+
+
+\end{frame}
+
+\end{document}
