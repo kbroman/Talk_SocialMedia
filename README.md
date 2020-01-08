@@ -1,7 +1,7 @@
 ### Talk on &ldquo;Social media for data scientists&rdquo;
 
 
-These are slides for a talk that I will give to the UW-Madison biomedial data
+These are slides for a talk that I gave to the UW-Madison biomedial data
 science students on 30 Oct 2019.
 
 I was strongly influenced by [Emi Tanaka](https://emitanaka.org)'s
